@@ -1,7 +1,7 @@
-use crate::puzzles::utils::read_file;
+use crate::puzzles::utils;
 
 pub fn run_puzzle_1() {
-    let input: String = read_file("input/input_1.txt");
+    let input: String = utils::read_file("input/input_1.txt");
 
     let mut count: i32 = 0;
     let mut result: Vec<i32> = Vec::new();
