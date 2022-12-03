@@ -42,7 +42,6 @@ fn calculate_score_second(actions: &Vec<&str>) -> i32{
     let to_pick_victory = HashMap::from([("C", "X"),("A", "Y"),("B", "Z"),]);
     let to_pick_loss = HashMap::from([("C", "Y"),("A", "Z"),("B", "X"),]);
 
-
     let mut count: i32 = 0;
     
     if actions[1].eq("Y") {
