@@ -19,7 +19,7 @@ pub fn run_puzzle_4() {
         let part2stop_int = temp2[1].parse::<u32>().unwrap();
 
         count += part_1(&part1start_int, &part2start_int, &part1stop_int, &part2stop_int);
-        count_part2 += part_2(part1start_int, part2start_int, part1stop_int, part2stop_int);
+        count_part2 += part_2(&part1start_int, &part2start_int, &part1stop_int, &part2stop_int);
 
     }
     println!("Puzzle 4:");
@@ -38,9 +38,9 @@ fn part_1(part1start_int: &u32, part2start_int: &u32, part1stop_int: &u32, part2
     return 0
 }
 
-fn part_2(part1start_int: u32, part2start_int: u32, part1stop_int: u32, part2stop_int: u32) -> u32 {
-    let set1: HashSet<u32> = (part1start_int..part1stop_int + 1).collect();
-    let set2: HashSet<u32> = (part2start_int..part2stop_int + 1).collect();
+fn part_2(part1start_int: &u32, part2start_int: &u32, part1stop_int: &u32, part2stop_int: &u32) -> u32 {
+    let set1: HashSet<u32> = (*part1start_int..*part1stop_int + 1).collect();
+    let set2: HashSet<u32> = (*part2start_int..*part2stop_int + 1).collect();
 
     let inter = set1.intersection(&set2);
 
