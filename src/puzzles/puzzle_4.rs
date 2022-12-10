@@ -22,6 +22,8 @@ pub fn run_puzzle_4() {
         count_part2 += part_2(&part1start_int, &part2start_int, &part1stop_int, &part2stop_int);
 
     }
+
+    println!("------------------------");
     println!("Puzzle 4:");
     println!("Total Count: {},\nTotal Count part 2: {}", count, count_part2);
     println!("------------------------");

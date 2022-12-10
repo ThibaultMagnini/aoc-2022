@@ -13,6 +13,7 @@ pub fn run_puzzle_2() {
         total_score_2 += calculate_score_second(&actions);
     }
 
+    println!("------------------------");
     println!("Puzzle 2:");
     println!("Total score 1: {0},\nTotal score 2: {1}", total_score_1, total_score_2);
     println!("------------------------");

@@ -30,7 +30,8 @@ pub fn run_puzzle_5() {
     }
     let result_1: Vec<char> = stacks_1.iter().map(|f| f[f.len() - 1]).collect();
     let result_2: Vec<char> = stacks_2.iter().map(|f| f[f.len() - 1]).collect();
-
+    
+    println!("------------------------");
     println!("Puzzle 5:");
     println!("Solution 1: {:?},\nSolution 2: {:?}", result_1, result_2);
     println!("------------------------");

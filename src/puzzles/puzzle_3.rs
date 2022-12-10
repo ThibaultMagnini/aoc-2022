@@ -24,6 +24,7 @@ pub fn run_puzzle_3() {
         }
     }
     
+    println!("------------------------");
     println!("Puzzle 3:");
     println!("Total Prio: {},\nTotal Prio By 3: {}", total_prio, group_total_prio);
     println!("------------------------");

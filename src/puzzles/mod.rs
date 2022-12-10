@@ -4,3 +4,7 @@ pub mod puzzle_2;
 pub mod puzzle_3;
 pub mod puzzle_4;
 pub mod puzzle_5;
+pub mod puzzle_6;
+pub mod puzzle_7;
+pub mod puzzle_9;
+pub mod puzzle_10;

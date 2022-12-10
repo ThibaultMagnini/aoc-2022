@@ -27,7 +27,8 @@ pub fn run_puzzle_1() {
 
     let max: i32 = top3[0];
     let max_sum_of_3: i32 = top3.iter().sum();
-    
+
+    println!("------------------------");
     println!("Puzzle 1:");
     println!("Max: {0},\nSum of top 3: {1}", max, max_sum_of_3);
     println!("------------------------");
